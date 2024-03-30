@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <!-- As a heading -->
+        <nav class="navbar bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Boolean Students</span>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <section>
+      <h3 class="py-5 text-center">lista dei studenti</h3>   
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          
+            <div class="container">
+              <table id="tabel-dom" class="table table-striped table-sm ">
+                <thead>
+                  <tr>
+                    <th scope="col">nome</th>
+                    <th scope="col">ruolo</th>
+                    <th scope="col">eta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tbody id="tbodyDom" class="table-group-divider">
+      
+                  <!-- <tr>
+                    <td>seniya</td>
+                    <td>thriwanka</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+      
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>98</td>
+                  </tr>
+                  <tr>
+                    <td>jack</td>
+                    <td>rose</td>
+                    <td>32</td>
+                  </tr>
+
+                  <tr id="tdbody">
+                  
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container py-5">
+        <div class="col-md-6">
+          <h3 class="py-3">Inserici un nuovo studente</h3>
+          <form id="docform">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+              <div id="nome" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="ruolo" class="form-label">ruolo</label>
+              <select class="form-select" id="ruolo" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="project maneger">project maneger</option>
+                <option value="developer">developer</option>
+                <option value="data entry">data entry</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="eta" class="form-label">Eta</label>
+              <input type="text" class="form-control" id="eta" aria-describedby="emailHelp">
+              <div id="eta" class="form-text"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
